@@ -1,6 +1,6 @@
 # Soal Prioritas 1
 
-## Soal
+
 1. Sebutkan dan jelaskan berbagai skill yang dibutuhkan untuk menjadi seorang data engineer! (minimal 3)   
    **Jawab :**  
    Skill yang diperlukan data engineer diantaranya :
