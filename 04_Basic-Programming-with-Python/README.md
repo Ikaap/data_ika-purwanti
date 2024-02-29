@@ -1,7 +1,8 @@
 # (04) Basic Programming with Python
 
 ## Deskripsi
-Python merupakan salah satu bahasa pemrograman yang termasuk dalam kategori tingkat tinggi. Python merupakan bahasa interpretasi sehingga tidak memerlukan kompilasi seperti bahasa pemrograman lainnya. Karena interprestasi pengengambangan akan menjadi lebih cepat dan fleksibel.  
+Python merupakan salah satu bahasa pemrograman yang termasuk dalam kategori tingkat tinggi. Python merupakan bahasa interpretasi sehingga tidak memerlukan kompilasi seperti bahasa pemrograman lainnya. Karena interprestasi pengengambangan akan menjadi lebih cepat dan fleksibel.
+
 **Alasan menggunakan Python** : 
 1. Bahasa Pemrograman yang mudah dipelajari 
 2. Simpel dan powerfull

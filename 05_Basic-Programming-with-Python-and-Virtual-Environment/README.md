@@ -22,4 +22,4 @@ Virtual Environment merupakan alat yang membantu memisahkan dependensi yang dipe
    Environments dapat dipindahkan dengan mudah dan berbagi dengan sistem yang lain.
 
 ### Dokumentasi
-Dokumentasi terkait Instalasi Virtual Environment dapat diakses [di sini](https://github.com/pyenv-win/pyenv-win)
+Dokumentasi terkait Virtual Environment dapat diakses [di sini](https://github.com/pyenv-win/pyenv-win)
