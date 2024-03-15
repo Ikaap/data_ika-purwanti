@@ -3,7 +3,7 @@
 
 1. Eksplorasi API RentABook :
    - Pelajari dokumentasi API dari RentABook: https://app.swaggerhub.com/apis-docs/sepulsa/RentABook-API/1.0.0  
-   - Identifikasi endpoint yang tersedia dan fungsinya.
+   - Identifikasi endpoint yang tersedia dan fungsinya.  
    **Jawab :**  
      - Authentication  
        - GET /token, digunakan untuk mendapatkan access token ketika client berhasil untuk proses authentication (login/register).
@@ -33,7 +33,7 @@
 2. Implementasi 4 Method pada RentABook API :
    - Lakukan request dengan method GET, POST, PUT, dan DELETE pada endpoint yang tersedia di RentABook API.  
    **Jawab :**  
-     - Client
+     1. Client
        - GET all  
        ![preview](https://github.com/Ikaap/data_ika-purwanti/blob/main/09_REST-API/screenshots/output_exploration_client_get_all.png)  
        - GET by id  
@@ -44,7 +44,7 @@
        ![preview](https://github.com/Ikaap/data_ika-purwanti/blob/main/09_REST-API/screenshots/output_exploration_client_put.png)  
        - DELETE  
        ![preview](https://github.com/Ikaap/data_ika-purwanti/blob/main/09_REST-API/screenshots/output_exploration_client_delete.png)  
-     - User
+     2. User
        - GET all  
        ![preview](https://github.com/Ikaap/data_ika-purwanti/blob/main/09_REST-API/screenshots/output_exploration_user_get_all.png)  
        - GET by id  
@@ -55,7 +55,7 @@
        ![preview](https://github.com/Ikaap/data_ika-purwanti/blob/main/09_REST-API/screenshots/output_exploration_user_put.png)  
        - DELETE  
        ![preview](https://github.com/Ikaap/data_ika-purwanti/blob/main/09_REST-API/screenshots/output_exploration_user_delete.png)  
-     - Book
+     3. Book
        - GET all  
        ![preview](https://github.com/Ikaap/data_ika-purwanti/blob/main/09_REST-API/screenshots/output_exploration_book_get_all.png)  
        - GET by id  

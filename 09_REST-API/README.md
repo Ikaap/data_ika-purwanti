@@ -44,7 +44,7 @@ REST (Representational State Transfer) merupakan sebuah guideline dan rekomendas
 ## JSON
 JSON (JavaScript Object Notation) merupakan sebuah format yang digunakan untuk menyimpan, membaca, serta menukar informasi dari web server sehingga dapat dibaca oleh para pengguna.  
 
-**Format JSON**
-{
-    "key": "value"
+**Format JSON**  
+{  
+    "key": "value"  
 }
