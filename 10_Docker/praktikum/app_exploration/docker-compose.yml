@@ -1,0 +1,40 @@
+version: "3.7"
+
+services:
+  app-service:
+    build: .
+    environment:
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+    networks:
+      - docker-exploration
+    depends_on:
+      database-service:
+        condition: service_healthy
+        restart: true
+
+
+  database-service:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+    ports:
+      - 3306
+    volumes:
+      - D:\Alterra Academy\tugas\dockerexplovolume:/var/lib/mysql
+      - ./mysql/init.sql:/data/application/init.sql
+    command: --init-file /data/application/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 3m30s
+      timeout: 15s
+      retries: 15
+    networks:
+      - docker-exploration
+
+networks:
+  docker-exploration:
+    driver: bridge
