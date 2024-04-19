@@ -1,0 +1,47 @@
+[2024-04-16T12:29:14.413+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-04-16T12:29:14.464+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: exploration_dag_v1.insert_data_task scheduled__2024-04-14T00:00:00+00:00 [queued]>
+[2024-04-16T12:29:14.484+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: exploration_dag_v1.insert_data_task scheduled__2024-04-14T00:00:00+00:00 [queued]>
+[2024-04-16T12:29:14.485+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 6
+[2024-04-16T12:29:14.514+0000] {taskinstance.py:2327} INFO - Executing <Task(PostgresOperator): insert_data_task> on 2024-04-14 00:00:00+00:00
+[2024-04-16T12:29:14.535+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=103) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-04-16T12:29:14.540+0000] {standard_task_runner.py:63} INFO - Started process 106 to run task
+[2024-04-16T12:29:14.541+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'exploration_dag_v1', 'insert_data_task', 'scheduled__2024-04-14T00:00:00+00:00', '--job-id', '384', '--raw', '--subdir', 'DAGS_FOLDER/exploration_dag.py', '--cfg-path', '/tmp/tmpxwugahtt']
+[2024-04-16T12:29:14.547+0000] {standard_task_runner.py:91} INFO - Job 384: Subtask insert_data_task
+[2024-04-16T12:29:14.680+0000] {task_command.py:426} INFO - Running <TaskInstance: exploration_dag_v1.insert_data_task scheduled__2024-04-14T00:00:00+00:00 [running]> on host 80febf28041c
+[2024-04-16T12:29:15.111+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ika' AIRFLOW_CTX_DAG_ID='exploration_dag_v1' AIRFLOW_CTX_TASK_ID='insert_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-04-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-14T00:00:00+00:00'
+[2024-04-16T12:29:15.114+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-04-16T12:29:15.180+0000] {sql.py:276} INFO - Executing: INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Strawberry', 29, 0.4, 5.4, 5.5, 0.8);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Pear', 57, 0.1, 10.0, 15.0, 0.4);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Blackberry', 40, 0.4, 4.5, 9.0, 1.3);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Plum', 46, 0.28, 9.92, 11.4, 0.7);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('GreenApple', 21, 0.1, 6.4, 3.1, 0.4);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Raspberry', 53, 0.7, 4.4, 12.0, 1.2);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Blueberry', 29, 0.4, 5.4, 5.5, 0.0);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Apple', 52, 0.4, 10.3, 11.4, 0.3);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Apricot', 15, 0.1, 3.2, 3.9, 0.5);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Cherry', 50, 0.3, 8.0, 12.0, 1.0);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Peach', 39, 0.25, 8.4, 9.5, 0.9);
+[2024-04-16T12:29:15.231+0000] {base.py:84} INFO - Using connection ID 'my_postgres' for task execution.
+[2024-04-16T12:29:15.275+0000] {base.py:84} INFO - Using connection ID 'my_postgres' for task execution.
+[2024-04-16T12:29:15.297+0000] {sql.py:457} INFO - Running statement: INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Strawberry', 29, 0.4, 5.4, 5.5, 0.8);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Pear', 57, 0.1, 10.0, 15.0, 0.4);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Blackberry', 40, 0.4, 4.5, 9.0, 1.3);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Plum', 46, 0.28, 9.92, 11.4, 0.7);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('GreenApple', 21, 0.1, 6.4, 3.1, 0.4);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Raspberry', 53, 0.7, 4.4, 12.0, 1.2);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Blueberry', 29, 0.4, 5.4, 5.5, 0.0);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Apple', 52, 0.4, 10.3, 11.4, 0.3);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Apricot', 15, 0.1, 3.2, 3.9, 0.5);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Cherry', 50, 0.3, 8.0, 12.0, 1.0);
+INSERT INTO fruits(name, calories, fat, sugar, carbohydrates, protein) VALUES ('Peach', 39, 0.25, 8.4, 9.5, 0.9);, parameters: None
+[2024-04-16T12:29:15.302+0000] {sql.py:466} INFO - Rows affected: 1
+[2024-04-16T12:29:15.303+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/providers/common/sql/hooks/sql.py:407: AirflowProviderDeprecationWarning: Call to deprecated method _make_common_data_structure. (The `_make_serializable` method is deprecated and support will be removed in a future version of the common.sql provider. Please update the DbApiHook's provider to a version based on common.sql >= 1.9.1.)
+  result = self._make_common_data_structure(handler(cur))
+
+[2024-04-16T12:29:15.314+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-04-16T12:29:15.336+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=exploration_dag_v1, task_id=insert_data_task, execution_date=20240414T000000, start_date=20240416T122914, end_date=20240416T122915
+[2024-04-16T12:29:15.410+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-04-16T12:29:15.443+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-16T12:29:15.446+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
