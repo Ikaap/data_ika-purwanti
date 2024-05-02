@@ -1,0 +1,1 @@
+[2024-04-24T10:18:37.674+0000] {task_context_logger.py:104} ERROR - Executor reports task instance <TaskInstance: data_quality_exploration_dag_v1.collect_data_task scheduled__2024-04-23T00:00:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

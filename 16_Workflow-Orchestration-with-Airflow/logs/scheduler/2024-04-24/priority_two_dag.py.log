@@ -1,0 +1,67 @@
+[2024-04-24T10:02:29.061+0000] {processor.py:161} INFO - Started process (PID=310) to work on /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:02:29.070+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/priority_two_dag.py for tasks to queue
+[2024-04-24T10:02:29.072+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:02:29.071+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:02:31.272+0000] {processor.py:840} INFO - DAG(s) 'priority_two_dag_v1' retrieved from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:02:31.318+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:02:31.318+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-24T10:02:31.354+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:02:31.353+0000] {dag.py:3954} INFO - Setting next_dagrun for priority_two_dag_v1 to 2024-04-24 00:00:00+00:00, run_after=2024-04-25 00:00:00+00:00
+[2024-04-24T10:02:31.381+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/priority_two_dag.py took 2.323 seconds
+[2024-04-24T10:03:02.443+0000] {processor.py:161} INFO - Started process (PID=316) to work on /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:03:02.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/priority_two_dag.py for tasks to queue
+[2024-04-24T10:03:02.451+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:03:02.450+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:03:05.993+0000] {processor.py:840} INFO - DAG(s) 'priority_two_dag_v1' retrieved from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:03:06.078+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:03:06.075+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-24T10:03:06.102+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:03:06.102+0000] {dag.py:3954} INFO - Setting next_dagrun for priority_two_dag_v1 to 2024-04-24 00:00:00+00:00, run_after=2024-04-25 00:00:00+00:00
+[2024-04-24T10:03:06.127+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/priority_two_dag.py took 3.704 seconds
+[2024-04-24T10:03:36.765+0000] {processor.py:161} INFO - Started process (PID=334) to work on /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:03:36.767+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/priority_two_dag.py for tasks to queue
+[2024-04-24T10:03:36.769+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:03:36.768+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:04:30.940+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:04:30.283+0000] {timeout.py:68} ERROR - Process timed out, PID: 334
+[2024-04-24T10:05:02.283+0000] {processor.py:161} INFO - Started process (PID=346) to work on /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:05:02.318+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/priority_two_dag.py for tasks to queue
+[2024-04-24T10:05:02.353+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:05:02.331+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:05:06.479+0000] {processor.py:840} INFO - DAG(s) 'priority_two_dag_v1' retrieved from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:05:06.801+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:05:06.798+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-24T10:05:06.822+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:05:06.822+0000] {dag.py:3954} INFO - Setting next_dagrun for priority_two_dag_v1 to 2024-04-24 00:00:00+00:00, run_after=2024-04-25 00:00:00+00:00
+[2024-04-24T10:05:06.860+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/priority_two_dag.py took 4.754 seconds
+[2024-04-24T10:05:37.636+0000] {processor.py:161} INFO - Started process (PID=358) to work on /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:05:37.638+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/priority_two_dag.py for tasks to queue
+[2024-04-24T10:05:37.639+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:05:37.638+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:05:38.640+0000] {processor.py:840} INFO - DAG(s) 'priority_two_dag_v1' retrieved from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:05:38.694+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:05:38.693+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-24T10:05:38.719+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:05:38.719+0000] {dag.py:3954} INFO - Setting next_dagrun for priority_two_dag_v1 to 2024-04-24 00:00:00+00:00, run_after=2024-04-25 00:00:00+00:00
+[2024-04-24T10:05:38.744+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/priority_two_dag.py took 1.113 seconds
+[2024-04-24T10:06:21.126+0000] {processor.py:161} INFO - Started process (PID=372) to work on /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:06:21.172+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/priority_two_dag.py for tasks to queue
+[2024-04-24T10:06:21.214+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:06:21.178+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:07:10.660+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:07:10.572+0000] {timeout.py:68} ERROR - Process timed out, PID: 372
+[2024-04-24T10:07:12.990+0000] {logging_mixin.py:188} WARNING - Exception ignored in: <function WeakKeyDictionary.__init__.<locals>.remove at 0x7f81be6ad580>
+[2024-04-24T10:07:13.018+0000] {logging_mixin.py:188} WARNING - Traceback (most recent call last):
+[2024-04-24T10:07:13.023+0000] {logging_mixin.py:188} WARNING -   File "/usr/local/lib/python3.12/weakref.py", line 369, in remove
+[2024-04-24T10:07:13.830+0000] {logging_mixin.py:188} WARNING -     def remove(k, selfref=ref(self)):
+[2024-04-24T10:07:15.371+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+[2024-04-24T10:07:21.117+0000] {logging_mixin.py:188} WARNING -     raise AirflowTaskTimeout(self.error_message)
+[2024-04-24T10:07:21.303+0000] {logging_mixin.py:188} WARNING - airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/priority_two_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.9.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.9.0/best-practices.html#reducing-dag-complexity, PID: 372
+[2024-04-24T10:07:51.607+0000] {processor.py:161} INFO - Started process (PID=394) to work on /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:07:51.608+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/priority_two_dag.py for tasks to queue
+[2024-04-24T10:07:51.610+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:07:51.609+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:07:53.674+0000] {processor.py:840} INFO - DAG(s) 'priority_two_dag_v1' retrieved from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:07:53.968+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:07:53.968+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-24T10:07:53.995+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:07:53.994+0000] {dag.py:3954} INFO - Setting next_dagrun for priority_two_dag_v1 to 2024-04-24 00:00:00+00:00, run_after=2024-04-25 00:00:00+00:00
+[2024-04-24T10:07:54.030+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/priority_two_dag.py took 2.423 seconds
+[2024-04-24T10:08:24.576+0000] {processor.py:161} INFO - Started process (PID=406) to work on /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:08:24.577+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/priority_two_dag.py for tasks to queue
+[2024-04-24T10:08:24.578+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:08:24.578+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:08:25.644+0000] {processor.py:840} INFO - DAG(s) 'priority_two_dag_v1' retrieved from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:08:25.676+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:08:25.675+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-24T10:08:25.696+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:08:25.696+0000] {dag.py:3954} INFO - Setting next_dagrun for priority_two_dag_v1 to 2024-04-24 00:00:00+00:00, run_after=2024-04-25 00:00:00+00:00
+[2024-04-24T10:08:25.718+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/priority_two_dag.py took 1.148 seconds
+[2024-04-24T10:08:56.318+0000] {processor.py:161} INFO - Started process (PID=418) to work on /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:08:56.320+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/priority_two_dag.py for tasks to queue
+[2024-04-24T10:08:56.322+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:08:56.322+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:08:58.381+0000] {processor.py:840} INFO - DAG(s) 'priority_two_dag_v1' retrieved from /opt/airflow/dags/priority_two_dag.py
+[2024-04-24T10:09:11.983+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:09:11.977+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-24T10:09:12.075+0000] {logging_mixin.py:188} INFO - [2024-04-24T10:09:12.075+0000] {dag.py:3954} INFO - Setting next_dagrun for priority_two_dag_v1 to 2024-04-24 00:00:00+00:00, run_after=2024-04-25 00:00:00+00:00
+[2024-04-24T10:09:12.143+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/priority_two_dag.py took 15.839 seconds

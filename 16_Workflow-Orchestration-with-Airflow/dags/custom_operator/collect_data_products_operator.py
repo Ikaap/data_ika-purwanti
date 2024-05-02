@@ -1,6 +1,7 @@
 import requests
 
 from airflow.models.baseoperator import BaseOperator
+import pandas as pd
 
 def retrieve_products(api_url):
     try:
@@ -24,4 +25,9 @@ class CollectDataProductsOperator(BaseOperator):
     
     def execute(self, context):
         api_url = f"https://fakestoreapi.com/products"
-        return retrieve_products(api_url)
+        products_data = retrieve_products(api_url)
+        # df_products = pd.DataFrame(products_data)
+        # print(df_products)          
+        # print(type(df_products))
+        print(products_data)
+        return products_data
