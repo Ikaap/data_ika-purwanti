@@ -1,0 +1,53 @@
+[2024-05-05T17:32:58.306+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-05T17:32:58.588+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: code_competence_2_dag_v1.load_data_task scheduled__2024-04-30T00:00:00+00:00 [queued]>
+[2024-05-05T17:32:58.781+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: code_competence_2_dag_v1.load_data_task scheduled__2024-04-30T00:00:00+00:00 [queued]>
+[2024-05-05T17:32:58.784+0000] {taskinstance.py:2303} INFO - Starting attempt 3 of 3
+[2024-05-05T17:32:58.915+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): load_data_task> on 2024-04-30 00:00:00+00:00
+[2024-05-05T17:32:59.169+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=60) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-05T17:32:59.251+0000] {standard_task_runner.py:63} INFO - Started process 73 to run task
+[2024-05-05T17:32:59.232+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'code_competence_2_dag_v1', 'load_data_task', 'scheduled__2024-04-30T00:00:00+00:00', '--job-id', '124', '--raw', '--subdir', 'DAGS_FOLDER/code_competence_2_dag.py', '--cfg-path', '/tmp/tmpqja44l9t']
+[2024-05-05T17:32:59.307+0000] {standard_task_runner.py:91} INFO - Job 124: Subtask load_data_task
+[2024-05-05T17:33:02.015+0000] {task_command.py:426} INFO - Running <TaskInstance: code_competence_2_dag_v1.load_data_task scheduled__2024-04-30T00:00:00+00:00 [running]> on host 59379b68c167
+[2024-05-05T17:33:02.301+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ika' AIRFLOW_CTX_DAG_ID='code_competence_2_dag_v1' AIRFLOW_CTX_TASK_ID='load_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-04-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-30T00:00:00+00:00'
+[2024-05-05T17:33:02.304+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-05T17:33:02.364+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-05T17:33:02.365+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/code_competence_2_dag.py", line 11, in load_data
+    df_event = pd.read_parquet(f"D:/Alterra Academy/tugas/data_ika-purwanti/Code_Competence_2/dags/file/events.parquet")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parquet.py", line 667, in read_parquet
+    return impl.read(
+           ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parquet.py", line 267, in read
+    path_or_handle, handles, filesystem = _get_path_or_handle(
+                                          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parquet.py", line 140, in _get_path_or_handle
+    handles = get_handle(
+              ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/Alterra Academy/tugas/data_ika-purwanti/Code_Competence_2/dags/file/events.parquet'
+[2024-05-05T17:33:02.394+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=code_competence_2_dag_v1, task_id=load_data_task, execution_date=20240430T000000, start_date=20240505T173258, end_date=20240505T173302
+[2024-05-05T17:33:02.416+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 124 for task load_data_task ([Errno 2] No such file or directory: 'D:/Alterra Academy/tugas/data_ika-purwanti/Code_Competence_2/dags/file/events.parquet'; 73)
+[2024-05-05T17:33:02.446+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-05T17:33:02.489+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-05T17:33:02.501+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,27 +1,9 @@
-import os
-from openai import OpenAI
-from dotenv import load_dotenv
+from integration_openai import generate
+import pandas as pd
 
-load_dotenv()
+data = pd.read_csv(f"D:/Alterra Academy/tugas/data_ika-purwanti/22_Implementation-AI-on-Data-Engineer/praktikum/source/Data Penjualan.csv")
+prompt = f"Berdasarkan data berikut : \n{data}\n1. berilah analisis yang berfokus pada analisis tren penjualan, segmentasi pelanggan, dan prediksi penjualan.untuk mendapatkan insight dari data tersebut."
+result = generate(prompt)
+print("Perintah : \n", prompt)
+print("output : \n", result)
 
-api_key = os.environ["OPENAI_API_KEY"]
-client = OpenAI(api_key=api_key)
-
-def generate(prompt, model="gpt-3.5-turbo", temperature=0, max_tokens=150):
-    response = client.chat.completions.create(
-        model=model,
-        temperature=temperature,
-        max_tokens=max_tokens,
-        messages=[
-            {
-                "role":"user",
-                "content":prompt,
-            },
-        ],
-    )
-    
-    return response.choices[0].message.content
-
-# prompt = "Buat query select"
-# result = generate(prompt)
-# print(result)
