@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "canvas-joy-418901",
+  "private_key_id": "707fd80a567d039813899f72a6701e1464de608a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC8fzslZ/fD3bkN\nNW2xUfauZqf6DXE/i6JUwfUy9i3iPx0bpBb4NHlmO9b2ndYA6YEhFHlCU3mtMs0X\nwkhfa9HmmuVo+qpSpcMHuUw6Ck9FTz0dGLrqd/wble8Z2AJ5VZuWnsRUqORY5Xrq\n9PkWBAubL4X6cLmlQlmnYKy8hPm2RVrJfcMfARqab+PlLFAWqlOxraq1/4Rge5N9\ni6fw71tv0BLnNxshwFO4OKKOeaN9PV5r8UewPhYuo7+dGRGg8NX6nCCrc8BokEmb\n5NQg2WY70ePN0GhSTivyohDR80ye41sFxmnI9zZ/trDqD0U7eS5ZksHg5v6/8qOR\nHfDZ0gU3AgMBAAECggEAOE3o5OuBXshEFmX3Nhg9jyqq0k5hnZGgE6E8FNTkL8ia\ncT86fTlvadJGC7Rp0Cvvnmn3LpCwr8OU75vg8l/Kew+Zpxn49mb9Mrluw4eA1jst\nDhvs+UyNyc+ndBjJ5GRl7T/PdVpdmxAw/y3dmW3r6ZbwdjZlva9sCEsgTc+Kp57c\nBLZqVz99EqNGsHgPfrbvj2IaVa2pI8WuvSD4kWIfXs9BawSEimCaK7w1WDXwlaYA\nAMfOuJRUTstX+lTS3r4evKGTrLhTcf6f9tzq86XYhaxqZRPDkK0eFBLbYBNTUd2k\naEvmn8fahLzAllD26ri4HICPMUwLiAl9HHD0PvLuQQKBgQDxgHqph0ny6coqGLEw\nywXm+HMkzADtGePP/eMKz0yxsse7U8Nx6oqDDilO7OYnVpZwGuhLOknKHrUg2wme\n2wkW8z8rf5jSu1Tv42Q9+P/2Q9zYQxkUed1bLkiDWsOkHVvh1XppHdyux3Gfv0eZ\ngAp2iWEKfOUYh0cfpUrMfmfonQKBgQDH0CWIGYW4CPC4LjXdnIhOF61EN4Q0FEl6\nBSemaV47qw5oLjVrS9t4aijW3mu4QmTyny/pGfSMDCug4XzPhcL0I4BQhmbnruDv\nW27h5EF6R5yJlj+IGKrKQ93mxVpMRQwmxtaH5CPqa0fSdfrde2k9p+hUtjHbFBe6\nPrUbkgkq4wKBgQDlNIM2kuhkW+87tOO243lelT7zFYtrfL7ykIwDnmuz23IlIILG\ng0uixrX96mklvNBa5a7CdzfBVROjcz/WPRyLY6H4rslkd9dNNgvVpZWJLS9VMZmE\nDYVBHNRFlsdH43VpCSt8yJLCbxgv/WL/FL7ZcdlgEtl8RigCqOYs32vPIQKBgQCI\nXDdQ00IbXxaQSxD9pRasXKIlPNHfDL08JYpymdPyWoFhfa99Au7LFX+7a10OCVmE\n7jgvF0R50tBvYZLguMNcA2JNEfvmPsVI9BgO1swMnBRrHPtMcLEVig1EsQg3pqNt\nTyMW6A3Oq9n++f7y6YbfydfW/+O0Q9kRhDvqjdXtywKBgQCd+T2eCOIsq9eXSzqM\nWZrdzEvoyVflaO++9SI/jYmIjw9WUL3/3eu26q+G2DnEYUgxrN44gPIPYBNIoAIj\n5SOfL/repOq0W7s6S5gnyPbvI6aiEjk6GYKLdKJcx9Us4iBBx2si0tX0gnLKXPJi\nTpC20pMX8TZs8HgDSJ4Ni/XZqA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "python-integration-de@canvas-joy-418901.iam.gserviceaccount.com",
+  "client_id": "116327254699725840769",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/python-integration-de%40canvas-joy-418901.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

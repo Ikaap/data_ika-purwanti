@@ -24,7 +24,7 @@ def load_data(df):
     firebase_admin.initialize_app(cred, {"storageBucket": "de-with-cloud-628cf.appspot.com"})
     
     bucket = storage.bucket()
-    filename = "D:/Alterra Academy/tugas/data_ika-purwanti/17_Data-Engineer-in-The-Cloud/file/survey.csv"
+    filename = "survey.csv"
     df.to_csv(filename)
     
     blob = bucket.blob(filename)

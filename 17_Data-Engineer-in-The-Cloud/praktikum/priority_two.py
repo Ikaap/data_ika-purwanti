@@ -23,13 +23,13 @@ def transform_data(df):
     return df
 
 def load_data(df):
-    df.to_parquet("D:/Alterra Academy/tugas/data_ika-purwanti/17_Data-Engineer-in-The-Cloud/file/stock_transactions.parquet", index=False)
+    df.to_parquet("stock_transactions.parquet", index=False)
     
     cred = credentials.Certificate("D:/Alterra Academy/tugas/data_ika-purwanti/17_Data-Engineer-in-The-Cloud/accountKey.json")
     firebase_admin.initialize_app(cred, {"storageBucket": "de-with-cloud-628cf.appspot.com"})
     
     bucket = storage.bucket()
-    filename = "D:/Alterra Academy/tugas/data_ika-purwanti/17_Data-Engineer-in-The-Cloud/file/stock_transactions.parquet"
+    filename = "stock_transactions.parquet"
     blob = bucket.blob(filename)
     blob.upload_from_filename(filename)
     
