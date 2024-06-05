@@ -60,7 +60,7 @@ def save_to_warehouse(ti):
     revenue_per_event.to_parquet("Revenue_per_event.parquet")
     avg_rating_per_event.to_parquet("Feedback_analysis.parquet")
         
-    with open(f"D:/Alterra Academy/tugas/data_ika-purwanti/Code_Competence_2/canvas-joy-418901-707fd80a567d.json") as f:
+    with open(f"D:/Alterra Academy/tugas/data_ika-purwanti/Code_Competence_2/serviceAccountKey.json") as f:
         service_account_info = json.load(f)
         
     credentials_info = google.oauth2.service_account.Credentials.from_service_account_info(
