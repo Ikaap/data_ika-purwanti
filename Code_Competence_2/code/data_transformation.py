@@ -31,7 +31,7 @@ class DataWarehouseLoader:
     def save_to_warehouse(self, df, table_name):
         df.to_parquet(table_name)
         
-        with open(f"D:/Alterra Academy/tugas/data_ika-purwanti/Code_Competence_2/canvas-joy-418901-707fd80a567d.json") as f:
+        with open(f"D:/Alterra Academy/tugas/data_ika-purwanti/Code_Competence_2/serviceAccountKey.json") as f:
             service_account_info = json.load(f)
         
         credentials_info = google.oauth2.service_account.Credentials.from_service_account_info(

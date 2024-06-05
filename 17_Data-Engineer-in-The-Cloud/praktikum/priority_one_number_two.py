@@ -23,13 +23,13 @@ def transform_data(df):
     return df
 
 def load_data(df):
-    df.to_csv("transactions.csv", index=False)
+    df.to_csv("D:/Alterra Academy/tugas/data_ika-purwanti/17_Data-Engineer-in-The-Cloud/file/transactions.csv", index=False)
     
     cred = credentials.Certificate("D:/Alterra Academy/tugas/data_ika-purwanti/17_Data-Engineer-in-The-Cloud/accountKey.json")
     firebase_admin.initialize_app(cred, {"storageBucket": "de-with-cloud-628cf.appspot.com"})
     
     bucket = storage.bucket()
-    filename = "transactions.csv"
+    filename = "D:/Alterra Academy/tugas/data_ika-purwanti/17_Data-Engineer-in-The-Cloud/file/transactions.csv"
     blob = bucket.blob(filename)
     blob.upload_from_filename(filename)
     

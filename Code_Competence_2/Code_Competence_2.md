@@ -34,9 +34,9 @@
      - output terminal
      ![preview](https://github.com/Ikaap/data_ika-purwanti/blob/main/Code_Competence_2/screenshots/output_data_transformation.png)  
      - GCP 
-     ![preview](https://github.com/Ikaap/data_ika-purwanti/blob/main/Code_Competence_2/screenshots/output_data_transformation.png)  
+     ![preview](https://github.com/Ikaap/data_ika-purwanti/blob/9d3b94a25d0db50605b6053753ecce834d537ef2/Code_Competence_2/screenshots/output_data_transformation_gcp.png)  
      - file Ticket_sold_per_event.parquet  
-     ![preview](https://github.com/Ikaap/data_ika-purwanti/blob/main/Code_Competence_2/screenshots/output_data_transformation_gcp.png)  
+     ![preview](D:\Alterra Academy\tugas\data_ika-purwanti\Code_Competence_2\screenshots\output_file_ticket_sold_per_event.png)  
      - file Revenue_per_event.parquet  
      ![preview](https://github.com/Ikaap/data_ika-purwanti/blob/main/Code_Competence_2/screenshots/output_file_revenue_per_events.png)  
      - File Feedback_analysis.parquet  

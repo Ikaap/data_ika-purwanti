@@ -2,7 +2,7 @@ import pandas as pd
 
 class SentimentClassifier:
     def __init__(self):
-        self.file_source = r"data_source\file.csv"
+        self.file_source = "D:/Alterra Academy/tugas/data_ika-purwanti/Code_Competence_1/data_source/file.csv"
     
     def load_data(self):
         df_all_data = pd.read_csv(self.file_source)
@@ -17,9 +17,9 @@ class SentimentClassifier:
     
     def save_to_csv(self, df_tweets_good, df_tweets_bad, df_tweets_neutral):
         try:
-            df_tweets_good.to_csv('sentiment_good.csv', index=False)
-            df_tweets_bad.to_csv('sentiment_bad.csv', index=False)
-            df_tweets_neutral.to_csv('sentiment_neutral.csv', index=False)
+            df_tweets_good.to_csv('D:/Alterra Academy/tugas/data_ika-purwanti/Code_Competence_1/file/sentiment_good.csv', index=False)
+            df_tweets_bad.to_csv('D:/Alterra Academy/tugas/data_ika-purwanti/Code_Competence_1/file/sentiment_bad.csv', index=False)
+            df_tweets_neutral.to_csv('D:/Alterra Academy/tugas/data_ika-purwanti/Code_Competence_1/file/sentiment_neutral.csv', index=False)
             
             print("Data berhasil disimpan ke dalam file CSV: sentiment_good.csv, sentiment_bad.csv, dan sentiment_neutral.csv")
         except:
@@ -28,7 +28,7 @@ class SentimentClassifier:
     def summarize_counts(self, df_tweets_good, df_tweets_bad, df_tweets_neutral):
         counts = [len(df_tweets_good), len(df_tweets_bad), len(df_tweets_neutral)]
         df_counts = pd.DataFrame({'Kategori': ['Good', 'Bad', 'Neutral'], 'Jumlah Tweets': counts})
-        df_counts.to_csv('sentiment_counts.csv', index=False)
+        df_counts.to_csv('D:/Alterra Academy/tugas/data_ika-purwanti/Code_Competence_1/file/sentiment_counts.csv', index=False)
         print("Data berhasil disimpan ke dalam file CSV: sentiment_counts.csv")
 
 

@@ -36,7 +36,7 @@ class DatabaseManager:
             print("Tidak Berhasil Membuat Table!!")    
     
     def insert_from_csv(self):
-        df_data_all = pd.read_csv(r"data_source\file.csv")
+        df_data_all = pd.read_csv("D:/Alterra Academy/tugas/data_ika-purwanti/Code_Competence_1/data_source/file.csv")
         
         cursor = self.connection.cursor()
         try:
